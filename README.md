@@ -1,4 +1,4 @@
-# clase de introduccion al lenguaje Python
+# Clase de introduccion al lenguaje Python
 
 ## Presentacion
 
