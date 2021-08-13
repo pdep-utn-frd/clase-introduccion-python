@@ -20,9 +20,10 @@ El menu es muy reducido, al menos por ahora, por lo que se cuenta unicamente con
 	del tamano, ademas del precio propio del tipo de pizza.
 
 	Los precios base son los siguientes:
-	  - grande   $100
-	  - mediana  $80
-	  - chica    $50
+
+	- Grande   $100
+	- Mediana  $80
+	- Chica    $50
 
 
 	**Tipos de Pizza**
