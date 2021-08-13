@@ -1,5 +1,10 @@
 # clase de introduccion al lenguaje Python
 
+## Presentacion
+
+La presentacion esta alojada en Google Drive siguiendo [este enlace](https://docs.google.com/presentation/d/1nzkC94fOXa6eP_MsBQKoainw6cjJy-ROePSNjVBAurw/edit?usp=sharing)
+
+
 ##  Ejercicio
 
 Se desea modelar las ordenes de un restaurant con el objetivo de
@@ -15,17 +20,17 @@ El menu es muy reducido, al menos por ahora, por lo que se cuenta unicamente con
 	del tamano, ademas del precio propio del tipo de pizza.
 
 	Los precios base son los siguientes:
-	  + grande   $100 
-	  + mediana  $80
-	  + chica    $50
+	  - grande   $100
+	  - mediana  $80
+	  - chica    $50
 
 
 	**Tipos de Pizza**
 	- Muzzarella   $500
 	- Calabresa
-		+ Grande   $700
-		+ Mediana  $600
-		+ Chica    $600
+		- Grande   $700
+		- Mediana  $600
+		- Chica    $600
 	- Napolitana
 		El precio se calcula como la cantidad de letras del tamano de la pizza
 		multiplicado por 100.
