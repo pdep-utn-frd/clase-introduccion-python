@@ -1,0 +1,47 @@
+import restaurant.*
+
+test "el precio base de una grande de muzza es 100" {
+	const grandeDeMuzza = new Muzzarella(tamanio = "grande")
+	assert.equals(100, grandeDeMuzza.precioBase())
+}
+
+test "el precio total de una grande de muzza es 600" {
+	const grandeDeMuzza = new Muzzarella(tamanio = "grande")
+	const precioBase = grandeDeMuzza.precioBase()
+	const precioMuzza = grandeDeMuzza.precioTipo()
+	assert.equals(precioBase + precioMuzza, grandeDeMuzza.precio())
+}
+
+test "el precio de una napolitana chica es 550" {
+	const napoChica = new Napolitana(tamanio = "chica")
+	const precioBase = napoChica.precioBase()
+	assert.equals(50, precioBase)
+	const precioTipo = napoChica.precioTipo()
+	assert.equals(500, precioTipo)
+	assert.equals(precioTipo + precioBase, napoChica.precio())
+}
+
+test "no se pueden crear hamburguesas invalidas" {
+	assert.throwsExceptionWithType(new CantidadInvalida(cantidad = 5), { new Hamburguesa(medallones = 5)})
+}
+
+test "el precio del flan tiene en cuenta el dulce de leche" {
+	const flanSinDDL = new Flan(tieneDulceDeLeche=false)
+	assert.equals(280, flanSinDDL.precio())
+	
+	const flanConDDL = new Flan(tieneDulceDeLeche=true)
+	assert.equals(300, flanConDDL.precio())
+}
+
+test "un pedido vacio tiene precio 0" {
+	const pedidoVacio = new Pedido()
+	assert.equals(0, pedidoVacio.precio())
+}
+
+test "un pedido con una muzza grande y flan (con ddl) cuesta 900" {
+	const grandeDeMuzza = new Muzzarella(tamanio="grande")
+	const flanConDDL = new Flan(tieneDulceDeLeche=true)
+	const pedido = new Pedido(comidas=[grandeDeMuzza, flanConDDL])
+	const subtotal = grandeDeMuzza.precio() + flanConDDL.precio()
+	assert.equals(subtotal * 1.15, pedido.precio())
+}

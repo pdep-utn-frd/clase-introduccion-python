@@ -133,6 +133,4 @@ dmypy.json
 # Wollok ignores
 
 ejercicio-wollok/bin
-ejercicio-wollok/build.properties
-ejercicio-wollok/META-INF
 ejercicio-wollok/package.json
