@@ -8,6 +8,8 @@ La presentacion esta alojada en Google Drive siguiendo [este enlace](https://doc
 ##  Ejercicio
 
 [Resolución en Python](https://github.com/pdep-utn-frd/clase-introduccion-python/blob/main/ejercicio.py)
+
+
 [Resolución en Wollok](https://github.com/pdep-utn-frd/clase-introduccion-python/tree/main/ejercicio-wollok)
 
 Se desea modelar las ordenes de un restaurant con el objetivo de
