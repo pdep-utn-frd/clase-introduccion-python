@@ -34,9 +34,9 @@ class Muzzarella(Pizza):
 class Calabresa(Pizza):
     def precio_tipo(self):
         if self.tamanio in ["mediana", "chica"]:
-            return 600 + self.precio_base()
+            return 600
         elif self.tamanio == "grande":
-            return 700 + self.precio_base()
+            return 700
 
 
 class Napolitana(Pizza):
@@ -54,10 +54,9 @@ class CantidadInvalida(Exception):
 
 class Hamburguesa():
     def __init__(self, medallones):
-        if 4 >= medallones >= 1:
-            self._medallones = medallones
-        else:
-            raise CantidadInvalida(cantidad=medallones)
+		# notar que en este caso se realiza la validacion debido a
+		# que se ejecuta el metodo medallones al asignarle un valor.
+	    self.medallones = medallones
 
     @property  # getter
     def medallones(self):

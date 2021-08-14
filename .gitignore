@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+# Wollok ignores
+
+ejercicio-wollok/bin
+ejercicio-wollok/build.properties
+ejercicio-wollok/META-INF
+ejercicio-wollok/package.json

@@ -1,3 +1,5 @@
+# vamos a usar la lib de testing que viene incluida en Python,
+# pero hay otras, como por ejemplo:
 # pytest
 # nosetest
 import unittest
